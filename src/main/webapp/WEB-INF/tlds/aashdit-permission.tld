@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0.0</tlibversion>
+	<jspversion>2.0</jspversion>
+	<shortname>PermissionCheckTag</shortname>
+	<uri>http://www.aashdit.com</uri>
+	<info>Permission Checker Tag</info>
+
+	<tag>
+		<name>hasPermission</name>
+		<tagclass>com.aashdit.um.util.PermissionCheckTag</tagclass>
+		<info>Checks if user has permission to carry out a certain operation</info>
+		<attribute>
+			<name>module</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>subModule</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>privilege</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+
+</taglib>
